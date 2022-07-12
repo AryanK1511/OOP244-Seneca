@@ -14,8 +14,11 @@ This repository contains all the OOP244 (Object Oriented Programming) workshops,
 - WS05-02-DIY: 10/10
 - WS06-01-LAB: Not Released
 - WS06-02-DIY: Not Released
+- WS07-PART-01: Not Released
+- WS07-PART-02: Not Released
 
 <!-- ### POINTS TO NOTE -->
+- After WS06, instead of having a lab and a DIY to solve, our workshops were divided into two parts. The first part is a lab and the second part is just a reflection.
 
 # Disclaimer
 Please don't just copy the code mindlessly without trying to solve the problems yourself, it's totally pointless if you actually wanna learn how to write software and a blatant violation of the [Academic Integrity](https://www.senecacollege.ca/about/policies/academic-integrity-policy.html) policy of the course.
