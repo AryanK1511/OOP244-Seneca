@@ -1,0 +1,35 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Aryan Khurana
+Student ID#: 145282216
+Email      : akhurana22@myseneca.ca
+Date of completion    : 12 July 2022
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, I was able to deepen my understanding about inheritance. We used a base class in this workshop and an inherited class that inherited the base class. The inherited class used many functions and members from the base class. We also got to use base class constructors in the derived class to initialize an object.
+Furthermore, we overloaded the insertion and extraction operators which made the code more readable and organized.
+
+The main problem I faced was that I got errors when the main function tried to print a 'Minister' object that was type casted into 'MemberParliament' object.
+Code: cout << endl << (MemberParliament)aMinister;
+The error stated that the operands are invalid and this operation could not be conducted. 
+
+Then I realized that I had messed up the constants. The write function and the insertion operator overload should use constant objects.
+Erroneous Code:
+Minister Module:
+    std::ostream& write(std::ostream& os = std::cout);
+    std::ostream& operator<<(std::ostream& os, Minister& minister);
+MemberParliament Module:
+    std::ostream& write(std::ostream& os = std::cout);
+    std::ostream& operator<<(std::ostream& os, MemberParliament& member);
+
+Corrected Code:
+Minister Module:
+    std::ostream& write(std::ostream& os = std::cout) const;
+    std::ostream& operator<<(std::ostream& os, const Minister& minister);
+MemberParliament Module:
+    std::ostream& write(std::ostream& os = std::cout) const;
+    std::ostream& operator<<(std::ostream& os, const MemberParliament& member);
