@@ -20,8 +20,8 @@ I have done all the coding by myself and only copied the code that my professor 
 namespace sdds {
     class MemberParliament {
     private:
-        char parliament_id[MAX_ID_LENGTH];
-        char district_represented[MAX_DISTRICT_LENGTH];
+        char parliament_id[MAX_ID_LENGTH + 1];
+        char district_represented[MAX_DISTRICT_LENGTH + 1];
         int MP_age;
     public:
         MemberParliament();
