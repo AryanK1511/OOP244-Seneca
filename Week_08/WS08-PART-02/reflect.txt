@@ -1,0 +1,59 @@
+/*
+*****************************************************************************
+                              reflect.t
+Full Name  : Aryan Khurana
+Student ID#: 145282216
+Email      : akhurana22@myseneca.ca
+Date of completion    : 19 July 2022
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, I learnt about defining a pure virtual function, coding an abstract base class, implementing the behaviour declared in a pure virtual function and explaining the difference between an abstract base class and a concrete class. This program involved multiple modules and multiple files that I had to link together to get the code to work. It was also a good revision of the previous concepts.
+
+The main error that I faced was that I was declaring the 'CreateAccount' function as a part of the iAccount class and was declaring it as virtual. My professor helped me with this question, and he told me that I had to declare the function outside of the iAccount class and not as a member function of the class. Also, I wasn’t supposed to make it virtual.
+
+Erroneous Code:
+class iAccount {
+public:
+    // Public empty virtual destructor
+    virtual ~iAccount(){};
+
+    // Adds a positive amount to the account balance
+    virtual bool credit(double) = 0;
+
+    // Subtracts a positive amount from the account balance
+    virtual bool debit(double) = 0;
+
+    // Applies month-end transactions to the account
+    virtual void monthEnd() = 0;
+
+    // Inserts account information into an ostream object
+    virtual void display(std::ostream&) const = 0;
+
+    // Creates the account with the starting balance and returns its address.
+    virtual iAccount* CreateAccount(const char*, double) = 0;  
+};
+
+Corrected Code:
+class iAccount {
+public:
+    // Public empty virtual destructor
+    virtual ~iAccount(){};
+
+    // Adds a positive amount to the account balance
+    virtual bool credit(double) = 0;
+
+    // Subtracts a positive amount from the account balance
+    virtual bool debit(double) = 0;
+
+    // Applies month-end transactions to the account
+    virtual void monthEnd() = 0;
+
+    // Inserts account information into an ostream object
+    virtual void display(std::ostream&) const = 0;
+};
+
+// Creates the account with the starting balance and returns its address.
+iAccount* CreateAccount(const char*, double);
