@@ -1,0 +1,37 @@
+/*
+*****************************************************************************
+                              Reflect.txt
+Full Name  : Aryan Khurana
+Student ID#: 145282216
+Email      : akhurana22@myseneca.ca
+Date of completion    : 30 July 2022
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, I learnt how to derive a class with resource from a base class which also includes a dynamic cString, override virtual an non-virtual methods of the base class and apply the rule of three to the base and the derived class.
+
+The main problem I faced in this workshop was that the program was reading only the first names or only the last names but not both of them together. After some consultation with the professor, I realized that the problem was in the attributes of the classes. Both were called m_value and I didnt use the 'this' keyword properly. So, in order to avoid the confusion, I changed the variable names to 'm_name' for the 'Name' class and m_surname' for the 'FullName' class.
+
+Erroneous Code:
+class Name {
+    private:
+        char* m_value;
+}
+
+class FullName : public Name {
+    private:
+        char* m_value;
+}
+
+Corrected Code:
+class Name {
+    private:
+        char* m_name;
+}
+
+class FullName : public Name {
+    private:
+        char* m_surname;
+}
