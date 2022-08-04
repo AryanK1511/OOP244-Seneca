@@ -1,0 +1,31 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Aryan Khurana
+Student ID#: 145282216
+Email      : akhurana22@myseneca.ca
+Date of completion    : 03 August 2022
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, I learnt how to code function templates and implement calls to function templates. 
+
+Basically I implemented two find() functions in this workshop which helped us to find an element in an array of a collection that was given to us earlier. However, in order to implement these find functions, we need an object of any collection type. A collection type could be a Card, a Book or a Pet. We would use this object to store the element that we found. Also, we need an Array which contains values/keys that we use to find elements in the object. Finally, we need the array where we will find the elements in.
+
+The find function is designed to be used with any type of collection because we have used function templates in the function definition.
+
+The main problem that I faced in this workshop is that I was getting some errors in the 3 argument find() template function. This was because the order of arguments that I specified in the function call was not correct. My professor helped me to catch this problem and hence, solve it.
+
+Function Definition:
+template <typename type1, typename type2>
+bool find(type1 arr[], type2 key, int index) {
+    return (arr[index] == key);
+}
+
+Erroneous Call:
+find("Hearts", C, ii)
+
+Corrected Call:
+find(C, "Hearts", ii)
