@@ -20,7 +20,7 @@ This repository contains all the OOP244 (Object Oriented Programming) workshops,
 - WS08: 10/10
 - WS09: 10/10
 - WS10: Not Released
-- 
+
 #### Final Project
 - MS1: Not Released
 - MS2: Not Released
