@@ -22,11 +22,11 @@ This repository contains all the OOP244 (Object Oriented Programming) workshops,
 - WS10: 10/10
 
 #### Final Project
-- MS1: Not Released
-- MS2: Not Released
-- MS3: Not Released
-- MS4: Not Released
-- MS5: Not Released
+- MS1: 10/10
+- MS2: 10/10
+- MS3: 10/10
+- MS4: 10/10
+- MS5: 10/10
 
 ### POINTS TO NOTE
 - After WS06, instead of having a lab and a DIY to solve, our workshops were divided into two parts. The first part is a lab and the second part is just a reflection.
